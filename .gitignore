@@ -102,3 +102,15 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+example.js
+
+.vscode
+
+Data.json
+
+note.txt
+
+test.html
+
