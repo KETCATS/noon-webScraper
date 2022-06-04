@@ -1,0 +1,30 @@
+    $(".productContainer").each((index,element)=>{
+    console.log($(element).find("a").attr("id"))
+    )
+
+
+    $(".productContainer").each((index,element)=>{
+    console.log($(element).find("a").attr("href"))
+    })
+
+    const SKU = $(element).find("a").attr("id").split(/[- ]+/).pop();
+
+    const URL = $(element).find("a").attr("href");  
+
+    const productImg = (".lazyload-wrapper").find("img").attr("src")
+
+
+ const YourPrice = $(".productContainer").find(`[data-qa='product-name']`).siblings().find("strong").text()
+
+
+
+
+$(".productContainer").map((index, element) => {
+        const SKU = $(element).find("a").attr("id").split(/[- ]+/).pop();
+        const URL = $(element).find("a").attr("href");
+        const productImg = $(element).find(".lazyload-wrapper").find("img").attr("src");
+        //const $(element).find(`[data-qa='product-name']`).siblings().find("strong").text()
+        const yourPrice = $(element).find(".currency").parent().children(2).text()
+
+        return { sku, url, img, price }
+    })
